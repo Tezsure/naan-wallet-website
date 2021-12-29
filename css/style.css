@@ -7,7 +7,7 @@ body {
   height: 100%;
 }
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   height: 100%;
 }
 .hide {
@@ -15,7 +15,7 @@ body {
 }
 .site-wrapper {
   min-height: 100%;
-  background: url('../images/banner.png');
+  background: url("../images/banner.png");
   background-position: left top;
   background-size: cover;
   background-repeat: repeat-y;
@@ -103,7 +103,7 @@ body {
   padding: 50px 175px 0 217px;
 }
 .section-heading {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 54px;
@@ -155,7 +155,7 @@ body {
   box-shadow: none;
   border: 0;
   padding: 8px 26px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -169,7 +169,7 @@ body {
   margin-top: 52px;
 }
 .policy-desc {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -179,7 +179,7 @@ body {
   margin-bottom: 18px;
 }
 .section-secondary-heading {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 37.6675px;
@@ -258,11 +258,14 @@ body {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 780px) {
   body {
     height: 100%;
     overflow: auto;
     background-size: auto;
+  }
+  .containerdapps {
+    padding: 28px 24px 0px 24px;
   }
   .navbar {
     padding: 0;
@@ -423,11 +426,33 @@ body {
 .containerdapps {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 5%;
+  padding: 32px 120px 0px 120px;
+  color: white;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 770px) {
   .collectibles {
     margin-top: 15px;
   }
+  .containerdapps {
+    padding: 28px 24px 0px 24px;
+  }
+}
+
+.heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  line-height: 27px;
+  font-family: "Poppins";
+}
+
+body div h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  line-height: 27px;
+  font-family: "Poppins";
 }
