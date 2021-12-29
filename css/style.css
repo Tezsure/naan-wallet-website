@@ -407,3 +407,20 @@ body {
     padding-top: 0;
   }
 }
+
+.heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+.para {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 15px;
+}
+.containerdapps {
+  max-width: 1200px;
+  margin: 0 auto;
+}
