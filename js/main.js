@@ -1,3 +1,24 @@
+const noOfChar = 60;
+const content = document.querySelectorAll('.para');
+console.log(content);
+content.forEach((content) => {
+  if (content.textContent.length < noOfChar) {
+    content.nextElementSibling.getElementsByClassName.display = 'none';
+  } else {
+    const displayText = content.textContent.slice(0, noOfChar);
+    const moretext = content.textContent.slice(noOfChar);
+    console.log(displayText);
+    content.innerHTML = `${displayText}<span class="dots">...</span><span class="hide more">${moretext}</span>`;
+  }
+});
+function readMore(btn) {
+  const post = btn.parentElement;
+  post.querySelector('.dots').classList.toggle('hide');
+  post.querySelector('.more').classList.toggle('hide');
+  btn.textContent == 'Read More'
+    ? (btn.textContent = 'Read Less')
+    : (btn.textContent = 'Read More');
+}
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const mobileMenu = document.getElementById('mobile-side-menu');
 const closeMobileMenu = document.getElementById('close-drawer-menu');
