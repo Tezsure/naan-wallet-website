@@ -1,269 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
-    <title>Naan Dapp</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="dist/readMoreJS.min.js"></script>
-  </head>
 
-  <body style="background: #26282c">
-    <div class="dapps-body">
-      <div class="containerdapps">
-        <h3>Trading Platforms</h3>
-        <div class="row mt-3">
-          <div
-            class="col-md-4 d-flex flex-row align-items-center"
-            onclick="test()"
-          >
-            <div class="my-auto">
-              <img src="images/icons/plenty.png" alt="" class="img_size" />
-            </div>
-            <div class="my-auto ml-4">
-              <h4 class="heading">Plenty</h4>
-              <p class="para">
-                Trade tokens and earn interest by staking. There is plenty of
-                DeFi to explore on Tezos
-              </p>
-              <p class="readmore" onclick="readMore(this,event)">Read More</p>
-            </div>
+<head>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+  <title>Naan Dapp</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="dist/readMoreJS.min.js"></script>
+</head>
+
+<body style="background: #26282c">
+  <div class="dapps-body">
+    <div class="containerdapps">
+      <h3>Trading Platforms</h3>
+      <div class="row" style="margin-top: 19.77px;">
+        <div class="col-md-4 d-flex flex-row align-items-center" onclick="redirect('https://plentydefi.com')">
+          <div class="my-auto">
+            <img src="images/icons/plenty.png" alt="" class="img_size" />
           </div>
-          <div class="col-md-4 d-flex flex-row collectibles">
-            <div class="my-auto">
-              <img src="images/icons/quipu.png" alt="" class="img_size" />
-            </div>
-            <div class="my-auto ml-4">
-              <h4 class="heading">Quipuswap</h4>
-              <p class="para">
-                Provides an interface for the seamless decentralized exchange of
-                Tezos-based tokens and XTZ
-              </p>
-              <p class="readmore" onclick="readMore(this)">Read More</p>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex flex-row collectibles">
-            <div class="my-auto">
-              <img
-                src="images/icons/vortex smartlink.png"
-                alt=""
-                class="img_size"
-              />
-            </div>
-            <div class="my-auto ml-4 mt-10">
-              <h4 class="heading">Vortex</h4>
-              <p class="para">
-                Vortex is an all-in-one decentralized finance protocol that
-                allows anyone to trade cryptocurrency in a trustless manner
-                without the need for a centralized intermediary
-              </p>
-              <p class="readmore" onclick="readMore(this)">Read More</p>
-            </div>
+          <div class="my-auto ml-4">
+            <h4 class="heading">Plenty</h4>
+            <p class="para">
+              Trade tokens and earn interest by staking. There is plenty of
+              DeFi to explore on Tezos
+            </p>
+            <p class="readmore" onclick="readMore(this,event)">Read More</p>
           </div>
         </div>
-      </div>
-      <div class="containerdapps">
-        <h3>DeFi</h3>
-        <div class="row mt-3">
-          <div class="col-md-4 d-flex flex-row align-items-center">
-            <div class="my-auto">
-              <img src="images/dapp.png" alt="" class="img_size" />
-            </div>
-            <div class="my-auto ml-4">
-              <h4 class="heading">Ctez</h4>
-              <p class="para">
-                ctez is a collateralized version of tez allowing you to use
-                Tezos DeFi and delegate your tez simultaneously
-              </p>
-              <p class="readmore" onclick="readMore(this)">Read More</p>
-            </div>
+        <div class="col-md-4 d-flex flex-row collectibles" onclick="redirect('https://quipuswap.com')">
+          <div class="my-auto">
+            <img src="images/icons/quipu.png" alt="" class="img_size" />
           </div>
-          <div class="col-md-4 d-flex flex-row collectibles">
-            <div class="my-auto">
-              <img src="images/icons/kolibri.svg" alt="" class="img_size" />
-            </div>
-            <div class="my-auto ml-4">
-              <h4 class="heading">Kolibri</h4>
-              <p class="para">
-                Kolibri is an Tezos based stablecoin built on Collateralized
-                Debt Positions (CDPs) known as Ovens
-              </p>
-              <p class="readmore" onclick="readMore(this)">Read More</p>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex flex-row collectibles">
-            <div class="my-auto">
-              <img src="images/icons/youves-logo.svg" alt="" class="img_size" />
-            </div>
-            <div class="my-auto ml-4">
-              <h4 class="heading">Youves</h4>
-              <p class="para">
-                Your tool on Tezos for asset creation and management.
-                Decentralised. Non-Custodial. Self-Governed
-              </p>
-              <p class="readmore" onclick="readMore(this)">Read More</p>
-            </div>
-          </div>
-          <div class="col-md-4 mt-3 d-flex flex-row collectibles">
-            <div class="my-auto">
-              <img src="images/icons/crunchy.png" alt="" class="img_size" />
-            </div>
-            <div class="my-auto ml-4">
-              <h4 class="heading">Crunchy</h4>
-              <p class="para">
-                Crunchy provides DeFi services and solutions on Tezos to
-                projects, developers, and end users
-              </p>
-              <p class="readmore" onclick="readMore(this)">Read More</p>
-            </div>
-          </div>
-          <div class="col-md-4 mt-3 d-flex flex-row collectibles">
-            <div class="my-auto">
-              <img
-                src="images/icons/flame space farm.png"
-                alt=""
-                class="img_size"
-              />
-            </div>
-            <div class="my-auto ml-4">
-              <h4 class="heading">FlameDeFi</h4>
-              <p class="para">
-                Tezos DeFi platfrom FLAME. SpaceFarm, Decentralized Exchange,
-                Liquidity pool
-              </p>
-              <p class="readmore" onclick="readMore(this)">Read More</p>
-            </div>
-          </div>
-          <div class="col-md-4 mt-3 d-flex flex-row collectibles">
-            <div class="my-auto">
-              <img src="images/icons/alien farm.jpeg" alt="" class="img_size" />
-            </div>
-            <div class="my-auto ml-4">
-              <h4 class="heading">Alien’s Farm</h4>
-              <p class="para">
-                open-source #DEX on Tezos: create your own pools, farm, earn
-                combo rewards
-              </p>
-              <p class="readmore" onclick="readMore(this)">Read More</p>
-            </div>
+          <div class="my-auto ml-4">
+            <h4 class="heading">Quipuswap</h4>
+            <p class="para">
+              Provides an interface for the seamless decentralized exchange of
+              Tezos-based tokens and XTZ
+            </p>
+            <p class="readmore" onclick="readMore(this,event)">Read More</p>
           </div>
         </div>
-      </div>
-      <div class="containerdapps">
-        <h3>Marketplaces</h3>
-        <div class="row mt-3">
-          <div class="col-md-4 d-flex flex-row align-items-center">
-            <div class="my-auto">
-              <img src="images/icons/objkt.png" alt="" class="img_size" />
-            </div>
-            <div class="my-auto ml-4">
-              <h4 class="heading">Objkt</h4>
-              <p class="para">
-                Buy and sell your NFTs on our marketplace or try out an English
-                or a Dutch Auction
-              </p>
-              <p class="readmore" onclick="readMore(this)">Read More</p>
-            </div>
+        <div class="col-md-4 d-flex flex-row collectibles" onclick="redirect('https://www.smartlink.so')">
+          <div class="my-auto">
+            <img src="images/icons/vortex smartlink.png" alt="" class="img_size" />
           </div>
-          <div class="col-md-4 d-flex flex-row collectibles">
-            <div class="my-auto">
-              <img src="images/icons/hic et nunc.png" alt="" class="img_size" />
-            </div>
-            <div class="my-auto ml-4">
-              <h4 class="heading">Hic et Nunc</h4>
-              <p class="para">
-                Manage decentralized digital assets, serving as a public smart
-                contract infrastructure on Tezos Blockchain
-              </p>
-              <p class="readmore" onclick="readMore(this)">Read More</p>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex flex-row collectibles">
-            <div class="my-auto">
-              <img src="images/icons/kalamint.png" alt="" class="img_size" />
-            </div>
-            <div class="my-auto ml-4">
-              <h4 class="heading">Kalamint</h4>
-              <p class="para">
-                Create, sell and collect NFTs on Tezos with Kalamint
-              </p>
-              <p class="readmore" onclick="readMore(this)">Read More</p>
-            </div>
-          </div>
-          <div class="col-md-4 mt-4 d-flex flex-row collectibles">
-            <div class="my-auto">
-              <img src="images/icons/rarible.png" alt="" class="img_size" />
-            </div>
-            <div class="my-auto ml-4">
-              <h4 class="heading">Rarible</h4>
-              <p class="para">
-                Lots of creative NFTs, low gas fees and a small carbon footprint
-              </p>
-              <p class="readmore" onclick="readMore(this)">Read More</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="containerdapps pb-10">
-        <h3>Games & Collectibles</h3>
-        <div class="row mt-3">
-          <div class="col-md-4 d-flex flex-row align-items-center">
-            <div class="my-auto">
-              <img src="images/icons/tezotapia.png" alt="" class="img_size" />
-            </div>
-            <div class="my-auto ml-4">
-              <h4 class="heading">Tezotopia</h4>
-              <p class="para">
-                Claim land and produce tokenized resources in this Blockchain
-                Space Adventure. Tezotopia is an NFT game that allows you to
-                become king or conqueror
-              </p>
-              <p class="readmore" onclick="readMore(this)">Read More</p>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex flex-row collectibles">
-            <div class="my-auto">
-              <img src="images/icons/pixelpotus.png" alt="" class="img_size" />
-            </div>
-            <div class="my-auto ml-4">
-              <h4 class="heading">PixelPotus</h4>
-              <p class="para">
-                PixelPotus is a digital collectable competition built on the
-                Tezos blockchain
-              </p>
-              <p class="readmore" onclick="readMore(this)">Read More</p>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex flex-row collectibles">
-            <div class="my-auto">
-              <img
-                src="images/icons/tezos_domain.png"
-                alt=""
-                class="img_size"
-              />
-            </div>
-            <div class="my-auto ml-4">
-              <h4 class="heading">Tezos Domains</h4>
-              <p class="para">Tezos Domains Friendly Names Now on Tezos</p>
-              <p class="readmore" onclick="readMore(this)">Read More</p>
-            </div>
+          <div class="my-auto ml-4 mt-10">
+            <h4 class="heading">Vortex</h4>
+            <p class="para">
+              Vortex is an all-in-one decentralized finance protocol that
+              allows anyone to trade cryptocurrency in a trustless manner
+              without the need for a centralized intermediary
+            </p>
+            <p class="readmore" onclick="readMore(this,event)">Read More</p>
           </div>
         </div>
       </div>
     </div>
-    <script src="js/main.js"></script>
-  </body>
+    <div class="containerdapps">
+      <h3>DeFi</h3>
+      <div class="row" style="margin-top: 19.77px;">
+        <div class="col-md-4 d-flex flex-row align-items-center" onclick="redirect('https://www.ctez.app')">
+          <div class="my-auto">
+            <img src="images/icons/ctez.png" alt="" class="img_size" />
+          </div>
+          <div class="my-auto ml-4">
+            <h4 class="heading">Ctez</h4>
+            <p class="para">
+              ctez is a collateralized version of tez allowing you to use
+              Tezos DeFi and delegate your tez simultaneously
+            </p>
+            <p class="readmore" onclick="readMore(this,event)">Read More</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex flex-row collectibles" onclick="redirect('https://kolibri.finance')">
+          <div class="my-auto">
+            <img src="images/icons/kolibri.svg" alt="" class="img_size" />
+          </div>
+          <div class="my-auto ml-4">
+            <h4 class="heading">Kolibri</h4>
+            <p class="para">
+              Kolibri is an Tezos based stablecoin built on Collateralized
+              Debt Positions (CDPs) known as Ovens
+            </p>
+            <p class="readmore" onclick="readMore(this,event)">Read More</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex flex-row collectibles" onclick="redirect('https://youves.com')">
+          <div class="my-auto">
+            <img src="images/icons/youves-logo.svg" alt="" class="img_size" />
+          </div>
+          <div class="my-auto ml-4">
+            <h4 class="heading">Youves</h4>
+            <p class="para">
+              Your tool on Tezos for asset creation and management.
+              Decentralised. Non-Custodial. Self-Governed
+            </p>
+            <p class="readmore" onclick="readMore(this,event)">Read More</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex flex-row collectibles" style="margin-top: 19.77px;"
+          onclick="redirect('https://app.crunchy.network')">
+          <div class="my-auto">
+            <img src="images/icons/crunchy.png" alt="" class="img_size" />
+          </div>
+          <div class="my-auto ml-4">
+            <h4 class="heading">Crunchy</h4>
+            <p class="para">
+              Crunchy provides DeFi services and solutions on Tezos to
+              projects, developers, and end users
+            </p>
+            <p class="readmore" onclick="readMore(this,event)">Read More</p>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3 d-flex flex-row collectibles" onclick="redirect('https://www.spacefarm.xyz')">
+          <div class="my-auto">
+            <img src="images/icons/flame space farm.png" alt="" class="img_size" />
+          </div>
+          <div class="my-auto ml-4">
+            <h4 class="heading">FlameDeFi</h4>
+            <p class="para">
+              Tezos DeFi platfrom FLAME. SpaceFarm, Decentralized Exchange,
+              Liquidity pool
+            </p>
+            <p class="readmore" onclick="readMore(this,event)">Read More</p>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3 d-flex flex-row collectibles" onclick="redirect('https://aliens.farm')">
+          <div class="my-auto">
+            <img src="images/icons/alien farm.jpeg" alt="" class="img_size" />
+          </div>
+          <div class="my-auto ml-4">
+            <h4 class="heading">Alien’s Farm</h4>
+            <p class="para">
+              open-source #DEX on Tezos: create your own pools, farm, earn
+              combo rewards
+            </p>
+            <p class="readmore" onclick="readMore(this,event)">Read More</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="containerdapps">
+      <h3>Marketplaces</h3>
+      <div class="row" style="margin-top: 19.77px;">
+        <div class="col-md-4 d-flex flex-row align-items-center" onclick="redirect('https://objkt.com')">
+          <div class="my-auto">
+            <img src="images/icons/objkt.png" alt="" class="img_size" />
+          </div>
+          <div class="my-auto ml-4">
+            <h4 class="heading">Objkt</h4>
+            <p class="para">
+              Buy and sell your NFTs on our marketplace or try out an English
+              or a Dutch Auction
+            </p>
+            <p class="readmore" onclick="readMore(this,event)">Read More</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex flex-row collectibles" onclick="redirect('https://hicetnunc.art')">
+          <div class="my-auto">
+            <img src="images/icons/hic et nunc.png" alt="" class="img_size" />
+          </div>
+          <div class="my-auto ml-4">
+            <h4 class="heading">Hic et Nunc</h4>
+            <p class="para">
+              Manage decentralized digital assets, serving as a public smart
+              contract infrastructure on Tezos Blockchain
+            </p>
+            <p class="readmore" onclick="readMore(this,event)">Read More</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex flex-row collectibles" onclick="redirect('https://kalamint.io')">
+          <div class="my-auto">
+            <img src="images/icons/kalamint.png" alt="" class="img_size" />
+          </div>
+          <div class="my-auto ml-4">
+            <h4 class="heading">Kalamint</h4>
+            <p class="para">
+              Create, sell and collect NFTs on Tezos with Kalamint
+            </p>
+            <p class="readmore" onclick="readMore(this,event)">Read More</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex flex-row collectibles" style="margin-top: 19.77px;"
+          onclick="redirect('https://rarible.com')">
+          <div class="my-auto">
+            <img src="images/icons/rarible.png" alt="" class="img_size" />
+          </div>
+          <div class="my-auto ml-4">
+            <h4 class="heading">Rarible</h4>
+            <p class="para">
+              Lots of creative NFTs, low gas fees and a small carbon footprint
+            </p>
+            <p class="readmore" onclick="readMore(this,event)">Read More</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="containerdapps pb-10">
+      <h3>Games & Collectibles</h3>
+      <div class="row" style="margin-top: 19.77px;">
+        <div class="col-md-4 d-flex flex-row align-items-center" onclick="redirect('https://tezotop.io')">
+          <div class="my-auto">
+            <img src="images/icons/tezotapia.png" alt="" class="img_size" />
+          </div>
+          <div class="my-auto ml-4">
+            <h4 class="heading">Tezotopia</h4>
+            <p class="para">
+              Claim land and produce tokenized resources in this Blockchain
+              Space Adventure. Tezotopia is an NFT game that allows you to
+              become king or conqueror
+            </p>
+            <p class="readmore" onclick="readMore(this,event)">Read More</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex flex-row collectibles" onclick="redirect('https://www.pixelpotus.com')">
+          <div class="my-auto">
+            <img src="images/icons/pixelpotus.png" alt="" class="img_size" />
+          </div>
+          <div class="my-auto ml-4">
+            <h4 class="heading">PixelPotus</h4>
+            <p class="para">
+              PixelPotus is a digital collectable competition built on the
+              Tezos blockchain
+            </p>
+            <p class="readmore" onclick="readMore(this,event)">Read More</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex flex-row collectibles" onclick="redirect('https://tezos.domains')">
+          <div class="my-auto">
+            <img src="images/icons/tezos_domain.png" alt="" class="img_size" />
+          </div>
+          <div class="my-auto ml-4">
+            <h4 class="heading">Tezos Domains</h4>
+            <p class="para">Tezos Domains Friendly Names Now on Tezos</p>
+            <p class="readmore" onclick="readMore(this,event)">Read More</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
