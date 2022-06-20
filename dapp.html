@@ -1,254 +1,662 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
-  <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
-  <title>Naan Dapp</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="dist/readMoreJS.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png"/>
+    <title>Naan Dapp</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name=theme-color" content="#26282c"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/dappbrowser.css"/>
 </head>
 
 <body style="background: #26282c">
-  <div class="dapps-body">
-    <div class="containerdapps">
-      <h3>Trading Platforms</h3>
-      <div class="row" style="margin-top: 19.77px;">
-        <div class="col-md-4 d-flex flex-row align-items-center" onclick="redirect('https://plentydefi.com')">
-          <div class="my-auto">
-            <img src="images/icons/plenty.png" alt="" class="img_size" />
-          </div>
-          <div class="my-auto ml-4">
-            <h4 class="heading">Plenty</h4>
-            <p class="para">
-              Trade tokens and earn interest by staking. There is plenty of
-              DeFi to explore on Tezos
-            </p>
-            <p class="readmore" onclick="readMore(this,event)">Read More</p>
-          </div>
+
+
+<div class="containerdapps" id="header">
+
+    <h2>Discover DApps</h2>
+</div>
+<div class="containerdapps" class="infoSection">
+    <div class="dappInfo" style="display: block;">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">What are DApps?</h5>
+                <p class="card-text">Decentralized Apps (DApps) are apps powered by decentralized
+                    protocols.</p>
+
+                <a href="FAQ.html" class="btn" class="learnMore">Learn more</a>
+                <button id="infoHideButton" class="btn">Hide</button>
+                <!--                <a href="#" class="card-link">Dismiss</a>-->
+            </div>
         </div>
-        <div class="col-md-4 d-flex flex-row collectibles" onclick="redirect('https://quipuswap.com')">
-          <div class="my-auto">
-            <img src="images/icons/quipu.png" alt="" class="img_size" />
-          </div>
-          <div class="my-auto ml-4">
-            <h4 class="heading">Quipuswap</h4>
-            <p class="para">
-              Provides an interface for the seamless decentralized exchange of
-              Tezos-based tokens and XTZ
-            </p>
-            <p class="readmore" onclick="readMore(this,event)">Read More</p>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex flex-row collectibles" onclick="redirect('https://www.smartlink.so')">
-          <div class="my-auto">
-            <img src="images/icons/vortex smartlink.png" alt="" class="img_size" />
-          </div>
-          <div class="my-auto ml-4 mt-10">
-            <h4 class="heading">Vortex</h4>
-            <p class="para">
-              Vortex is an all-in-one decentralized finance protocol that
-              allows anyone to trade cryptocurrency in a trustless manner
-              without the need for a centralized intermediary
-            </p>
-            <p class="readmore" onclick="readMore(this,event)">Read More</p>
-          </div>
-        </div>
-      </div>
     </div>
-    <div class="containerdapps">
-      <h3>DeFi</h3>
-      <div class="row" style="margin-top: 19.77px;">
-        <div class="col-md-4 d-flex flex-row align-items-center" onclick="redirect('https://www.ctez.app')">
-          <div class="my-auto">
-            <img src="images/icons/ctez.png" alt="" class="img_size" />
-          </div>
-          <div class="my-auto ml-4">
-            <h4 class="heading">Ctez</h4>
-            <p class="para">
-              ctez is a collateralized version of tez allowing you to use
-              Tezos DeFi and delegate your tez simultaneously
-            </p>
-            <p class="readmore" onclick="readMore(this,event)">Read More</p>
-          </div>
+</div>
+
+
+
+<div class="containerdapps">
+    <h3>POPULAR ✨</h3>
+    <div class="row">
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://plentydefi.com/swap')">
+            <div class="my-auto">
+                <img src="images/icons/plenty.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">Plenty</h4>
+                <p class="para">
+                    EVM bridge and AMM for uncorrelated and tightly correlated Tezos tokens.
+                </p>
+            </div>
         </div>
-        <div class="col-md-4 d-flex flex-row collectibles" onclick="redirect('https://kolibri.finance')">
-          <div class="my-auto">
-            <img src="images/icons/kolibri.svg" alt="" class="img_size" />
-          </div>
-          <div class="my-auto ml-4">
-            <h4 class="heading">Kolibri</h4>
-            <p class="para">
-              Kolibri is an Tezos based stablecoin built on Collateralized
-              Debt Positions (CDPs) known as Ovens
-            </p>
-            <p class="readmore" onclick="readMore(this,event)">Read More</p>
-          </div>
+
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://objkt.com')">
+            <div class="my-auto">
+                <img src="images/icons/objkt.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">objkt.com</h4>
+                <p class="para">
+                    Discover the latest NFTs on the largest NFT marketplace on Tezos.
+                </p>
+            </div>
         </div>
-        <div class="col-md-4 d-flex flex-row collectibles" onclick="redirect('https://youves.com')">
-          <div class="my-auto">
-            <img src="images/icons/youves-logo.svg" alt="" class="img_size" />
-          </div>
-          <div class="my-auto ml-4">
-            <h4 class="heading">Youves</h4>
-            <p class="para">
-              Your tool on Tezos for asset creation and management.
-              Decentralised. Non-Custodial. Self-Governed
-            </p>
-            <p class="readmore" onclick="readMore(this,event)">Read More</p>
-          </div>
+
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://tezblock.io/swap')">
+            <div class="my-auto">
+                <img src="images/icons/liquiditybaking.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">Liquidity Baking</h4>
+                <p class="para">
+                    A unique tez - tzBTC AMM subsidized by the Tezos protocol itself.
+                </p>
+            </div>
         </div>
-        <div class="col-md-4 d-flex flex-row collectibles" style="margin-top: 19.77px;"
-          onclick="redirect('https://app.crunchy.network')">
-          <div class="my-auto">
-            <img src="images/icons/crunchy.png" alt="" class="img_size" />
-          </div>
-          <div class="my-auto ml-4">
-            <h4 class="heading">Crunchy</h4>
-            <p class="para">
-              Crunchy provides DeFi services and solutions on Tezos to
-              projects, developers, and end users
-            </p>
-            <p class="readmore" onclick="readMore(this,event)">Read More</p>
-          </div>
-        </div>
-        <div class="col-md-4 mt-3 d-flex flex-row collectibles" onclick="redirect('https://www.spacefarm.xyz')">
-          <div class="my-auto">
-            <img src="images/icons/flame space farm.png" alt="" class="img_size" />
-          </div>
-          <div class="my-auto ml-4">
-            <h4 class="heading">FlameDeFi</h4>
-            <p class="para">
-              Tezos DeFi platfrom FLAME. SpaceFarm, Decentralized Exchange,
-              Liquidity pool
-            </p>
-            <p class="readmore" onclick="readMore(this,event)">Read More</p>
-          </div>
-        </div>
-        <div class="col-md-4 mt-3 d-flex flex-row collectibles" onclick="redirect('https://aliens.farm')">
-          <div class="my-auto">
-            <img src="images/icons/alien farm.jpeg" alt="" class="img_size" />
-          </div>
-          <div class="my-auto ml-4">
-            <h4 class="heading">Alien’s Farm</h4>
-            <p class="para">
-              open-source #DEX on Tezos: create your own pools, farm, earn
-              combo rewards
-            </p>
-            <p class="readmore" onclick="readMore(this,event)">Read More</p>
-          </div>
-        </div>
-      </div>
     </div>
-    <div class="containerdapps">
-      <h3>Marketplaces</h3>
-      <div class="row" style="margin-top: 19.77px;">
-        <div class="col-md-4 d-flex flex-row align-items-center" onclick="redirect('https://objkt.com')">
-          <div class="my-auto">
-            <img src="images/icons/objkt.png" alt="" class="img_size" />
-          </div>
-          <div class="my-auto ml-4">
-            <h4 class="heading">Objkt</h4>
-            <p class="para">
-              Buy and sell your NFTs on our marketplace or try out an English
-              or a Dutch Auction
-            </p>
-            <p class="readmore" onclick="readMore(this,event)">Read More</p>
-          </div>
+</div>
+
+
+<div class="containerdapps">
+    <h3> NFT MARKETPLACES 🎨</h3>
+    <div class="row">
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://objkt.com')">
+            <div class="my-auto">
+                <img src="images/icons/objkt.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">objkt.com</h4>
+                <p class="para">
+                    Discover the latest NFTs on the largest NFT marketplace on Tezos.
+                </p>
+            </div>
         </div>
-        <div class="col-md-4 d-flex flex-row collectibles" onclick="redirect('https://hicetnunc.art')">
-          <div class="my-auto">
-            <img src="images/icons/hic et nunc.png" alt="" class="img_size" />
-          </div>
-          <div class="my-auto ml-4">
-            <h4 class="heading">Hic et Nunc</h4>
-            <p class="para">
-              Manage decentralized digital assets, serving as a public smart
-              contract infrastructure on Tezos Blockchain
-            </p>
-            <p class="readmore" onclick="readMore(this,event)">Read More</p>
-          </div>
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://www.fxhash.xyz/')">
+            <div class="my-auto">
+                <img src="images/icons/fxhash.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">fxhash</h4>
+                <p class="para">
+                    Platform for generative NFTs on the Tezos blockchain.
+                </p>
+            </div>
         </div>
-        <div class="col-md-4 d-flex flex-row collectibles" onclick="redirect('https://kalamint.io')">
-          <div class="my-auto">
-            <img src="images/icons/kalamint.png" alt="" class="img_size" />
-          </div>
-          <div class="my-auto ml-4">
-            <h4 class="heading">Kalamint</h4>
-            <p class="para">
-              Create, sell and collect NFTs on Tezos with Kalamint
-            </p>
-            <p class="readmore" onclick="readMore(this,event)">Read More</p>
-          </div>
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://teia.art/')">
+            <div class="my-auto">
+                <img src="images/icons/teia.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">Teia</h4>
+                <p class="para">
+                    Community-owned version of the Tezos NFT platform Hic et Nunc.
+                </p>
+            </div>
         </div>
-        <div class="col-md-4 d-flex flex-row collectibles" style="margin-top: 19.77px;"
-          onclick="redirect('https://rarible.com')">
-          <div class="my-auto">
-            <img src="images/icons/rarible.png" alt="" class="img_size" />
-          </div>
-          <div class="my-auto ml-4">
-            <h4 class="heading">Rarible</h4>
-            <p class="para">
-              Lots of creative NFTs, low gas fees and a small carbon footprint
-            </p>
-            <p class="readmore" onclick="readMore(this,event)">Read More</p>
-          </div>
-        </div>
-      </div>
     </div>
-    <div class="containerdapps pb-10">
-      <h3>Games & Collectibles</h3>
-      <div class="row" style="margin-top: 19.77px;">
-        <div class="col-md-4 d-flex flex-row align-items-center" onclick="redirect('https://tezotop.io')">
-          <div class="my-auto">
-            <img src="images/icons/tezotapia.png" alt="" class="img_size" />
-          </div>
-          <div class="my-auto ml-4">
-            <h4 class="heading">Tezotopia</h4>
-            <p class="para">
-              Claim land and produce tokenized resources in this Blockchain
-              Space Adventure. Tezotopia is an NFT game that allows you to
-              become king or conqueror
-            </p>
-            <p class="readmore" onclick="readMore(this,event)">Read More</p>
-          </div>
+
+    <!--        ACCORDION-->
+
+    <div class="hiddenMarketplaces" style="display: none;">
+        <div class="row">
+            <div class="col-md-4 d-flex flex-row dapp">
+                <div class="d-flex flex-row" onclick="redirect('https://versum.xyz/')">
+                    <div class="my-auto">
+                        <img src="images/icons/versum.png" alt="" class="img_size"/>
+                    </div>
+                    <div class="my-auto ml-4">
+                        <h4 class="heading">Versum</h4>
+                        <p class="para">
+                            Next-gen NFT platform and metaverse on the Tezos blockchain.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-row dapp">
+                <div class="d-flex flex-row" onclick="redirect('https://www.oneof.com/')">
+                    <div class="my-auto">
+                        <img src="images/icons/oneof.png" alt="" class="img_size"/>
+                    </div>
+                    <div class="my-auto ml-4">
+                        <h4 class="heading">OneOf</h4>
+                        <p class="para">
+                            Connecting fans to their favorite artists, athletes, and brands.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-row dapp">
+                <div class="d-flex flex-row" onclick="redirect('https://rarible.com')">
+                    <div class="my-auto">
+                        <img src="images/icons/rarible.png" alt="" class="img_size"/>
+                    </div>
+                    <div class="my-auto ml-4">
+                        <h4 class="heading">Rarible</h4>
+                        <p class="para">
+                            Multichain community-centric NFT marketplace.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-row dapp">
+                <div class="d-flex flex-row" onclick="redirect('https://www.artforge.io/')">
+                    <div class="my-auto">
+                        <img src="images/icons/artforge.png" alt="" class="img_size"/>
+                    </div>
+                    <div class="my-auto ml-4">
+                        <h4 class="heading">ArtForge</h4>
+                        <p class="para">
+                            A first-of-its-kind NFT launchpad platform on Tezos.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 d-flex flex-row dapp">
+                <div class="d-flex flex-row" onclick="redirect('https://kalamint.io')">
+                    <div class="my-auto">
+                        <img src="images/icons/kalamint.png" alt="" class="img_size"/>
+                    </div>
+                    <div class="my-auto ml-4">
+                        <h4 class="heading">Kalamint</h4>
+                        <p class="para">
+                            One of the first NFT marketplaces on the Tezos blockchain.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 d-flex flex-row dapp">
+                <div class="d-flex flex-row" onclick="redirect('https://minterpop.com/')">
+                    <div class="my-auto">
+                        <img src="images/icons/minterpop.png" alt="" class="img_size"/>
+                    </div>
+                    <div class="my-auto ml-4">
+                        <h4 class="heading">Minterpop</h4>
+                        <p class="para">
+                            NFT marketplace built for fans of all stripes. By Interpop.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="col-md-4 d-flex flex-row collectibles" onclick="redirect('https://www.pixelpotus.com')">
-          <div class="my-auto">
-            <img src="images/icons/pixelpotus.png" alt="" class="img_size" />
-          </div>
-          <div class="my-auto ml-4">
-            <h4 class="heading">PixelPotus</h4>
-            <p class="para">
-              PixelPotus is a digital collectable competition built on the
-              Tezos blockchain
-            </p>
-            <p class="readmore" onclick="readMore(this,event)">Read More</p>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex flex-row collectibles" onclick="redirect('https://tezos.domains')">
-          <div class="my-auto">
-            <img src="images/icons/tezos_domain.png" alt="" class="img_size" />
-          </div>
-          <div class="my-auto ml-4">
-            <h4 class="heading">Tezos Domains</h4>
-            <p class="para">Tezos Domains Friendly Names Now on Tezos</p>
-            <p class="readmore" onclick="readMore(this,event)">Read More</p>
-          </div>
-        </div>
-      </div>
+
     </div>
-  </div>
-  <script src="js/main.js"></script>
+    <button onclick="changeTextMarketplaces(); changeVisibilityMarketplaces()" value="Show All" id="btnMarketplaces"
+            class="btn btn-primary btn-lg btn-block dapp">Show All
+    </button>
+</div>
+
+
+<div class="containerdapps">
+    <h3>TRADING PLATFORMS 💸</h3>
+    <div class="row">
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://plentydefi.com/swap')">
+            <div class="my-auto">
+                <img src="images/icons/plenty.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">Plenty</h4>
+                <p class="para">
+                    EVM bridge and AMM for uncorrelated and correlated Tezos tokens.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://quipuswap.com')">
+            <div class="my-auto">
+                <img src="images/icons/quipu.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">QuipuSwap</h4>
+                <p class="para">
+                    AMM protocol for the exchange of Tezos tokens. </p>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://tezblock.io/swap')">
+            <div class="my-auto">
+                <img src="images/icons/liquiditybaking.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">Liquidity Baking</h4>
+                <p class="para">
+                    A unique tez - tzBTC AMM subsidized by the Tezos protocol itself.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="hiddenExchanges" style="display: none;">
+        <div class="row">
+            <div class="col-md-4 d-flex flex-row dapp">
+                <div class="d-flex flex-row" onclick="redirect('https://spicyswap.xyz/#/')">
+                    <div class="my-auto">
+                        <img src="images/icons/spicyswap.png" alt="" class="img_size"/>
+                    </div>
+                    <div class="my-auto ml-4">
+                        <h4 class="heading">SpicySwap</h4>
+                        <p class="para">
+                            Token-to-token AMM governed by the SalsaDAO.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-row dapp">
+                <div class="d-flex flex-row" onclick="redirect('https://vortex.network/')">
+                    <div class="my-auto">
+                        <img src="images/icons/vortex smartlink.png" alt="" class="img_size"/>
+                    </div>
+                    <div class="my-auto ml-4 mt-10">
+                        <h4 class="heading">Vortex</h4>
+                        <p class="para">
+                            Trade, earn and play with the Vortex Protocol.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <button onclick="changeTextExchanges(); changeVisibilityExchanges()" value="Show All" id="btnExchanges"
+            class="btn btn-primary btn-lg btn-block dapp">Show All
+    </button>
+</div>
+
+
+<div class="containerdapps">
+    <h3>DEFI 🏦</h3>
+    <div class="row">
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://kolibri.finance')">
+            <div class="my-auto">
+                <img src="images/icons/kolibri.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">Kolibri</h4>
+                <p class="para">
+                    Algorithmic USD stablecoin on Tezos. Governed by the Kolibri DAO.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://youves.com')">
+            <div class="my-auto">
+                <img src="images/icons/youves.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">Youves</h4>
+                <p class="para">
+                    A decentralized tool for asset creation and management.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://www.ctez.app')">
+            <div class="my-auto">
+                <img src="images/icons/ctez.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">Ctez</h4>
+                <p class="para">
+                    Ctez is decentralized and collateralized tez for DeFi.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hiddenDefi" style="display: none;">
+        <div class="row">
+            <div class="col-md-4 d-flex flex-row dapp"
+                 onclick="redirect('https://juster.fi/')">
+                <div class="my-auto">
+                    <img src="images/icons/juster.png" alt="" class="img_size"/>
+                </div>
+                <div class="my-auto ml-4">
+                    <h4 class="heading">Juster</h4>
+                    <p class="para">
+                        Decentralized betting protocol on the Tezos blockchain.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 d-flex flex-row dapp"
+                 onclick="redirect('https://app.crunchy.network')">
+                <div class="my-auto">
+                    <img src="images/icons/crunchy.png" alt="" class="img_size"/>
+                </div>
+                <div class="my-auto ml-4">
+                    <h4 class="heading">Crunchy</h4>
+                    <p class="para">
+                        DeFi services and solutions for
+                        projects, developers, and end users.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-row dapp"
+                 onclick="redirect('https://matterdefi.xyz/#/')">
+                <div class="my-auto">
+                    <img src="images/icons/matterdefi.png" alt="" class="img_size"/>
+                </div>
+                <div class="my-auto ml-4">
+                    <h4 class="heading">Matter</h4>
+                    <p class="para">
+                        Yield farming platform for growing Spicyswap's liquidity.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-row dapp"
+                 onclick="redirect('https://salsadao.xyz/#/')">
+                <div class="my-auto">
+                    <img src="images/icons/salsadao.png" alt="" class="img_size"/>
+                </div>
+                <div class="my-auto ml-4">
+                    <h4 class="heading">SalsaDAO</h4>
+                    <p class="para">
+                        Governs all products released by Genius Contracts.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <button onclick="changeTextDefi(); changeVisibilityDefi()" value="Show All" id="btnDefi"
+            class="btn btn-primary btn-lg btn-block dapp">Show All
+    </button>
+    <!--      </div>-->
+</div>
+
+
+<div class="containerdapps">
+    <h3>GAMES 🕹</h3>
+    <div class="row">
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://tezotopia.com/home/')">
+            <div class="my-auto">
+                <img src="images/icons/tezotapia.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">Tezotopia</h4>
+                <p class="para">
+                    Battle and claim land in this blockchain space adventure.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://www.tezosdegenclub.com/#/')">
+            <div class="my-auto">
+                <img src="images/icons/tezosdegenclub.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">TezosDegenClub</h4>
+                <p class="para">
+                    Collection of degen games on Tezos.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://www.pixelpotus.com')">
+            <div class="my-auto">
+                <img src="images/icons/pixelpotus.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">PixelPotus</h4>
+                <p class="para">
+                    A digital collectable competition built on the Tezos blockchain.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hiddenGames" style="display: none;">
+        <div class="row">
+            <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://www.pixeldebates.com/')">
+                <div class="my-auto">
+                    <img src="images/icons/pixeldebates.png" alt="" class="img_size"/>
+                </div>
+                <div class="my-auto ml-4">
+                    <h4 class="heading">PixelDebates</h4>
+                    <p class="para">
+                        NFT trading card game themed around presidential debates.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://www.pixelpower.xyz/')">
+                <div class="my-auto">
+                    <img src="images/icons/pixelpower.png" alt="" class="img_size"/>
+                </div>
+                <div class="my-auto ml-4">
+                    <h4 class="heading">PixelPower</h4>
+                    <p class="para">
+                        NFT competition built on the Tezos blockchain.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://tezpets.xyz/')">
+                <div class="my-auto">
+                    <img src="images/icons/tezpets.png" alt="" class="img_size"/>
+                </div>
+                <div class="my-auto ml-4">
+                    <h4 class="heading">Tez Pets</h4>
+                    <p class="para">
+                        Cute little Tezos Pets that live on the blockchain.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <button onclick="changeTextGames(); changeVisibilityGames()" value="Show All" id="btnGames"
+            class="btn btn-primary btn-lg btn-block dapp">Show All
+    </button>
+
+</div>
+
+<div class="containerdapps">
+    <h3>COLLECTIBLES 🌠</h3>
+    <div class="row">
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://www.tezzardz.xyz/')">
+            <div class="my-auto">
+                <img src="images/icons/tezzardz.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">Tezzardz</h4>
+                <p class="para">
+                    Snazzy fukkrs on the Tezos blockchain by OMGiDRAWEDit.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://dogami.com/')">
+            <div class="my-auto">
+                <img src="images/icons/dogami.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">Dogamí</h4>
+                <p class="para">
+                    Your true virtual companion! Adopt and raise unique Dogamí in AR/VR.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://www.ottez.xyz/')">
+            <div class="my-auto">
+                <img src="images/icons/ottez.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">Ottez</h4>
+                <p class="para">
+                    The humans are gone, Ottez have taken over! 4,007 generative PFP Ottez.
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="hiddenCollectibles" style="display: none;">
+        <div class="row">
+            <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://www.neonz.xyz/')">
+                <div class="my-auto">
+                    <img src="images/icons/neonz.png" alt="" class="img_size"/>
+                </div>
+                <div class="my-auto ml-4">
+                    <h4 class="heading">NEONZ</h4>
+                    <p class="para">
+                        NFT drops and Interactive art experiences by Sutu.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://ziggurats.xyz/#/')">
+                <div class="my-auto">
+                    <img src="images/icons/ziggurats.png" alt="" class="img_size"/>
+                </div>
+                <div class="my-auto ml-4">
+                    <h4 class="heading">ZIGGURATS</h4>
+                    <p class="para">
+                        ZIGGURATS is the first generative NFT mixtape. By Mike Shinoda.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://www.prjktneon.xyz//')">
+                <div class="my-auto">
+                    <img src="images/icons/prjktneon.png" alt="" class="img_size"/>
+                </div>
+                <div class="my-auto ml-4">
+                    <h4 class="heading">PRJKTNEON</h4>
+                    <p class="para">
+                        PRJKTNEON is a collection of 666 cyberpunk, dystopian AVATARS.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://commonskeles.xyz/')">
+                <div class="my-auto">
+                    <img src="images/icons/skelles.png" alt="" class="img_size"/>
+                </div>
+                <div class="my-auto ml-4">
+                    <h4 class="heading">randomly common skeles</h4>
+                    <p class="para">
+                        Randomly generated skeleton .gifs by john karel.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://objkt.com/collection/gogos')">
+                <div class="my-auto">
+                    <img src="images/icons/gogos.png" alt="" class="img_size"/>
+                </div>
+                <div class="my-auto ml-4">
+                    <h4 class="heading">GOGOs</h4>
+                    <p class="para">
+                        An experiment between Arya Mularama and 0x10.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://www.bunnyknights.com/')">
+                <div class="my-auto">
+                    <img src="images/icons/bunnyknights.png" alt="" class="img_size"/>
+                </div>
+                <div class="my-auto ml-4">
+                    <h4 class="heading">Bunny Knights</h4>
+                    <p class="para">
+                        NFT collectible project available on the Tezos network.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://interpopcomics.com/home')">
+                <div class="my-auto">
+                    <img src="images/icons/interpopcomics.png" alt="" class="img_size"/>
+                </div>
+                <div class="my-auto ml-4">
+                    <h4 class="heading">Interpop Comics</h4>
+                    <p class="para">
+                        Digitally native comics with true digital ownership of your titles.                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="changeTextCollectibles(); changeVisibilityCollectibles()" value="Show All" id="btnCollectibles"
+            class="btn btn-primary btn-lg btn-block dapp">Show All
+    </button>
+
+</div>
+
+
+
+<div class="containerdapps">
+    <h3>DIGITAL IDENTITY 🪪</h3>
+    <div class="row">
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://tezos.domains')">
+            <div class="my-auto">
+                <img src="images/icons/tezos_domain.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">Tezos Domains</h4>
+                <p class="para">Friendly domain names for Tezos addresses.</p>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://tzprofiles.com/')">
+            <div class="my-auto">
+                <img src="images/icons/tzprofiles.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">Tezos Profiles</h4>
+                <p class="para">Associate your online identity with your Tezos account.</p>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex flex-row dapp" onclick="redirect('https://dns.xyz/')">
+            <div class="my-auto">
+                <img src="images/icons/dns.png" alt="" class="img_size"/>
+            </div>
+            <div class="my-auto ml-4">
+                <h4 class="heading">DNS.xyz</h4>
+                <p class="para">DNS turns all your crypto wallets into one profile.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="containerdapps" class="infoSection">
+    <div class="dappInfoMissing">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Missing a Tezos DApp?</h5>
+                <p class="card-text">Let us know your favorite Tezos DApp and we will add it to the naan browser.</p>
+
+                <a href="https://forms.gle/Eey7VgTA3nzKVpQV6" class="btn" class="learnMore">Let us know!</a>
+
+                <!--                <a href="#" class="card-link">Dismiss</a>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/dappbrowser.js"></script>
 </body>
 
 </html>
