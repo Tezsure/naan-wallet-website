@@ -1,111 +1,117 @@
 <!DOCTYPE html>
-  <head>
+<head>
     <title>Naan - The best Tezos wallet</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <meta name="title" content="Naan">
     <meta name="keywords" content="Tezos wallet, naan, tezos dapp, naan wallet, crypto wallet">
-    <meta name="description" content="Naan has all the flavours you crave for in the palm of your hand. An easy-to-use mobile wallet, ready for all your DeFi needs on the Tezos blockchain.">
+    <meta name="description"
+          content="Naan has all the flavours you crave for in the palm of your hand. An easy-to-use mobile wallet, ready for all your DeFi needs on the Tezos blockchain.">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
 
-  <body>
-    <div class="website-loader" id="website-loader">
-      <div class="website-loader-img-wrapper">
+<body>
+<div class="website-loader" id="website-loader">
+    <div class="website-loader-img-wrapper">
         <img src="images/loader.png" alt="" class="website-loader-img">
-      </div>
     </div>
-    <div class="site-wrapper">
-      <header class="site-header">
+</div>
+<div class="site-wrapper">
+    <header class="site-header">
         <div class="backdrop hide" id="backdrop"></div>
         <div class="container">
-          <nav class="navbar flex space-between align-center">
-            <div class="site-logo-wrapper">
-              <a href="/" class="site-logo">
-                <img src="images/logo.png" class="site-logo-img" alt="logo" />
-              </a>
-            </div>
-            <ul class="site-nav-menu-wrapper flex hide-small">
-              <li class="site-nav-menu-item" id="menu-dropdown-link">
-                <a href="#" class="site-nav-menu-link">About</a>
-                
-                <div class="dropdown-menu-wrapper hide" id="dropdown-menu-wrapper">
-                  <ul class="site-nav-menu-wrapper">
-                    <li class="site-nav-menu-item">
-                      <a href="/privacy-policy.html" class="site-nav-menu-link">Privacy Policy</a>
-                    </li>
-                    <li class="site-nav-menu-item">
-                      <a href="/terms.html" class="site-nav-menu-link">Terms &amp; Conditions</a>
-                    </li>
-                  </ul>
+            <nav class="navbar flex space-between align-center">
+                <div class="site-logo-wrapper">
+                    <a href="/" class="site-logo">
+                        <img src="images/logo.png" class="site-logo-img" alt="logo"/>
+                    </a>
                 </div>
-              </li>
-              <li class="site-nav-menu-item">
-                <a href="mailto:info@tezsure.com" class="site-nav-menu-link">Contact</a>
-              </li>
-            </ul>
+                <ul class="site-nav-menu-wrapper flex hide-small">
+                    <li class="site-nav-menu-item" id="menu-dropdown-link">
+                        <a href="#" class="site-nav-menu-link">About</a>
 
-            <button class="mobile-menu-btn hide-md" id="mobile-menu-btn">
-              <img src="images/menu-btn.png" class="img-responsive" />
-            </button>
-          </nav>
+                        <div class="dropdown-menu-wrapper hide" id="dropdown-menu-wrapper">
+                            <ul class="site-nav-menu-wrapper">
+                                <li class="site-nav-menu-item">
+                                    <a href="/privacy-policy.html" class="site-nav-menu-link">Privacy Policy</a>
+                                </li>
+                                <li class="site-nav-menu-item">
+                                    <a href="/terms.html" class="site-nav-menu-link">Terms &amp; Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="site-nav-menu-item">
+                        <a href="mailto:info@tezsure.com" class="site-nav-menu-link">Contact</a>
+                    </li>
+                </ul>
+
+                <button class="mobile-menu-btn hide-md" id="mobile-menu-btn">
+                    <img src="images/menu-btn.png" class="img-responsive"/>
+                </button>
+            </nav>
         </div>
-      </header>
+    </header>
 
-      <aside class="mobile-side-menu hide-md" id="mobile-side-menu">
+    <aside class="mobile-side-menu hide-md" id="mobile-side-menu">
         <div class="mobile-menu">
-          <ul class="site-nav-menu-wrapper">
-            <li class="site-nav-menu-item">
-              <a href="/privacy-policy.html" class="site-nav-menu-link">Privacy Policy</a>
-            </li>
-            <li class="site-nav-menu-item">
-              <a href="/terms.html" class="site-nav-menu-link">Terms &amp; Conditions</a>
-            </li>
-            <li class="site-nav-menu-item">
-              <a href="mailto:info@tezsure.com" class="site-nav-menu-link">Contact</a>
-            </li>
-          </ul>
-          <button class="close-drawer-menu" id="close-drawer-menu">
-            <span class="material-icons">close</span>
-          </button>
+            <ul class="site-nav-menu-wrapper">
+                <li class="site-nav-menu-item">
+                    <a href="/privacy-policy.html" class="site-nav-menu-link">Privacy Policy</a>
+                </li>
+                <li class="site-nav-menu-item">
+                    <a href="/terms.html" class="site-nav-menu-link">Terms &amp; Conditions</a>
+                </li>
+                <li class="site-nav-menu-item">
+                    <a href="mailto:info@tezsure.com" class="site-nav-menu-link">Contact</a>
+                </li>
+            </ul>
+            <button class="close-drawer-menu" id="close-drawer-menu">
+                <span class="material-icons">close</span>
+            </button>
         </div>
-      </aside>
+    </aside>
 
-      <main>
+    <main>
         <section class="hero-section">
-          <div class="container hero-container flex align-center justify-between">
-            <div class="hero-section-content-wrapper">
-              <div class="hero-section-content">
-                <h1 class="section-heading">A tasty Tezos wallet 
-                  <span>for iOS and Android. </span>
-                </h1>
-                <p class="hero-section-sub-heading">Naan has all the flavours you crave for in the palm of your hand. An easy-to-use mobile wallet, ready for all your DeFi needs on the Tezos blockchain.</p>
+            <div class="container hero-container flex align-center justify-between">
+                <div class="hero-section-content-wrapper">
+                    <div class="hero-section-content">
+                        <h1 class="section-heading">A tasty Tezos wallet
+                            <span>for iOS and Android. </span>
+                        </h1>
+                        <p class="hero-section-sub-heading">Naan has all the flavours you crave for in the palm of your
+                            hand. An easy-to-use mobile wallet, ready for all your DeFi needs on the Tezos
+                            blockchain.</p>
 
-                <div class="download-app-btns flex">
-                  <a href="https://apps.apple.com/in/app/naan-a-tasty-tezos-wallet/id1573210354" target="_blank" class="download-app-btn">
-                      <img src="images/appstore.svg" class="resp-img" alt="App store" />
-                  </a>
-                  <a href="https://play.google.com/store/apps/details?id=com.naan" target="_blank" class="download-app-btn">
-                    <img src="images/playstore.svg" class="resp-img" alt="App store" />
-                  </a>
+                        <div class="download-app-btns flex">
+                            <a href="https://apps.apple.com/in/app/naan-a-tasty-tezos-wallet/id1573210354"
+                               target="_blank" class="download-app-btn">
+                                <img src="images/appstore.svg" class="resp-img" alt="App store"/>
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.naan" target="_blank"
+                               class="download-app-btn">
+                                <img src="images/playstore.svg" class="resp-img" alt="App store"/>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
-              </div>
-              
-            </div>
 
-            <div class="wallet-img-wrapper">
-              <img src="images/wallet.png" class="resp-img" alt="Wallet">
+                <div class="wallet-img-wrapper">
+                    <img src="images/wallet.png" class="resp-img" alt="Wallet">
+                </div>
             </div>
-          </div>
         </section>
-      </main>
-    </div>
-    <script src="js/main.js"></script>
-  </body>
+    </main>
+</div>
+<script src="js/main.js"></script>
+</body>
 </html>
