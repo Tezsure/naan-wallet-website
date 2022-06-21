@@ -44,10 +44,11 @@ h2 {
     font-family: "Poppins";
 
 }
-#dappInfoHeader {
+.dappInfoHeader {
     background: linear-gradient(90deg, #E0C3FC 0%, #8EC5FC 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     text-fill-color: transparent;
 }
 
