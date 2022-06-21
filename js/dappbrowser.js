@@ -165,14 +165,4 @@ function changeVisibilityDigiId() {
 
 }
 
-function redirect(link) {
-    window.location.href = link;
-}
-const websiteLoader = document.getElementById("website-loader");
 
-
-window.addEventListener("DOMContentLoaded", () => {
-    setTimeout(() => {
-        websiteLoader.classList.add("hide");
-    }, 3000);
-});
