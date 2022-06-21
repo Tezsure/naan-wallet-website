@@ -563,9 +563,7 @@ h3{
     color: #1E1E1E;
 }
 
-#infoSection{
 
-}
 
 .WhatAreDAppsPage {
     padding: 28px 24px 0px 24px;
@@ -580,5 +578,12 @@ h3{
     padding-top: 60px;
 }
 
+.dappheader {
+    padding-top: 0px;
+}
+
+.popularheader {
+    padding-top: 10px;
+}
 
 
