@@ -586,4 +586,9 @@ h3{
     padding-top: 10px;
 }
 
+.img_size_promotion {
+    max-width: 100%;
+    height: auto;
+}
+
 
