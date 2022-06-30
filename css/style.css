@@ -488,15 +488,4 @@ body div h3 {
   color: white;
 }
 
-@media screen and (max-width: 770px) {
-  .collectibles {
-    margin-top: 15px;
-  }
-  .containerdapps {
-    padding: 28px 24px 0px 24px;
-  }
-}
 
-.dapps-body {
-  padding-bottom: 50px;
-}
