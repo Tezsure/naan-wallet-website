@@ -488,7 +488,7 @@ body div h2 {
     text-align: center;
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 24px;
     font-family: "Poppins";
     background: linear-gradient(90deg, #E0C3FC 0%, #8EC5FC 100%);
     -webkit-background-clip: text;
@@ -600,8 +600,8 @@ h3{
     margin-right: 6px;
 }
 .nav-pills a {
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .img_sizeapp {
@@ -646,13 +646,20 @@ element.style {
         padding-left: 15px;
         padding-right: 10px;
     }
+    .img_sizeapp {
+        max-width: 100px;
+        max-height: 100px;
+        width: 58px;
+        height: auto;
+
+    }
 }
 
 @media screen and (min-width: 380px) {
     .img_sizeapp {
         max-width: 100px;
         max-height: 100px;
-        width: 58px;
+        width: 60px;
         height: auto;
 
     }
@@ -729,11 +736,28 @@ hr.devider{
 
 hr.top {
     margin-top: -0.5rem;
-    margin-bottom: -2.5rem;
+    margin-bottom: -1.5rem;
+    opacity: 0%;
 
 }
 a:hover {
     color:#ffffff;
+}
+
+.buttonstop {
+    padding: 0px 24px 0px 24px;
+}
+.popularmarketplaces {
+    padding: 12px 24px 0px 24px;
+}
+.newontezos {
+    padding: 12px 24px 0px 24px;
+}
+.collections {
+    padding: 0px 24px 0px 24px;
+}
+.event1 {
+    padding: 10px 24px 0px 24px;
 }
 
 
