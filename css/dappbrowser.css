@@ -599,10 +599,6 @@ h3{
 .nav-pills li {
     margin-right: 6px;
 }
-.nav-pills a {
-    font-size: 14px;
-    font-weight: 600;
-}
 
 .img_sizeapp {
     max-width: 100px;
@@ -640,6 +636,16 @@ element.style {
 
 
     }
+    .nav-pills a {
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .nav-pills li {
+        margin-right: 2px;
+    }
+    .nav-link {
+        padding: 7px 12px;
+    }
 }
 @media screen and (min-width: 360px) {
     .appicon {
@@ -653,6 +659,15 @@ element.style {
         height: auto;
 
     }
+    .nav-pills a {
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .nav-pills li {
+        margin-right: 4px;
+    }
+
+
 }
 
 @media screen and (min-width: 380px) {
@@ -667,6 +682,13 @@ element.style {
         padding-left: 15px;
         padding-right: 15px;
     }
+    .nav-pills a {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .nav-pills li {
+        margin-right: 6px;
+    }
 
 }
 
@@ -680,6 +702,13 @@ element.style {
     }
     .centericons {
         margin: auto;
+    }
+    .nav-pills a {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .nav-pills li {
+        margin-right: 6px;
     }
 
 }
@@ -760,4 +789,13 @@ a:hover {
     padding: 10px 24px 0px 24px;
 }
 
+.nfttools {
+    padding: 12px 24px 0px 24px;
+
+}
+
+/*ul.nav {*/
+/*    white-space: nowrap; !important;*/
+/*    overflow-x: auto; !important;*/
+/*}*/
 
