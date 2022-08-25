@@ -782,8 +782,11 @@ a:hover {
 /*.newontezos {*/
 /*    padding: 12px 24px 0px 24px;*/
 /*}*/
+.collectionspotlight {
+    padding: 12px 24px 0px 24px;
+}
 .collections {
-    padding: 0px 24px 0px 24px;
+    padding: 12px 24px 0px 24px;
 }
 .event1 {
     padding: 10px 24px 0px 24px;
@@ -793,6 +796,11 @@ a:hover {
     padding: 12px 24px 0px 24px;
 
 }
+
+.home {
+    padding: 12px 24px 0px 24px;
+}
+
 
 /*ul.nav {*/
 /*    white-space: nowrap; !important;*/
